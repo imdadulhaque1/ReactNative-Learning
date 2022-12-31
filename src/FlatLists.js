@@ -10,9 +10,9 @@ const FlatLists = () => {
     {id: 4, name: 'Shampa Khatun'},
     {id: 5, name: 'Maisha'},
     {id: 6, name: 'Imdadul Haque Imdad'},
-    {id: 7, name: 'Maisha'},
+    {id: 7, name: 'Israt Jahan'},
     {id: 8, name: 'Imdadul Haque'},
-    {id: 9, name: 'Maisha'},
+    {id: 9, name: 'Israt Maisha'},
     {id: 10, name: 'Imdadul Haque Imdad'},
     {id: 11, name: 'Maisha'},
     {id: 12, name: 'Imdadul Haque'},
@@ -20,13 +20,25 @@ const FlatLists = () => {
     {id: 14, name: 'Maisha'},
     {name: 'The End'},
   ]);
+  const handleClick = clickedData => {
+    // console.log(`You clicked ${clickedData}'s Profile.`);
+    setDatas(prevData => {
+      return prevData.filter(tempData => {
+        if (tempData.id !== clickedData) {
+          return tempData;
+        }
+      });
+    });
+  };
   return (
     <View style={styles.container}>
       <FlatList
         data={datas}
         renderItem={({item}) => {
           return (
-            <TouchableOpacity style={styles.DataView}>
+            <TouchableOpacity
+              style={styles.DataView}
+              onPress={() => handleClick(item.id)}>
               <Text style={styles.itemIdView}>{item.id}</Text>
               <Text style={styles.itemNameView}>{item.name}</Text>
             </TouchableOpacity>
