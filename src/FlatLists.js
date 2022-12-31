@@ -16,6 +16,9 @@ const FlatLists = () => {
     {id: 10, name: 'Imdadul Haque Imdad'},
     {id: 11, name: 'Maisha'},
     {id: 12, name: 'Imdadul Haque'},
+    {id: 13, name: 'Imdadul Haque Imdad'},
+    {id: 14, name: 'Maisha'},
+    {name: 'The End'},
   ]);
   return (
     <View style={styles.container}>
@@ -29,6 +32,7 @@ const FlatLists = () => {
             </TouchableOpacity>
           );
         }}
+        numColumns={2}
       />
     </View>
   );
