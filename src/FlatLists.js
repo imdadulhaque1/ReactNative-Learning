@@ -1,5 +1,12 @@
 /* eslint-disable prettier/prettier */
-import {StyleSheet, Text, View, FlatList, TouchableOpacity} from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  View,
+  FlatList,
+  TouchableOpacity,
+  SafeAreaView,
+} from 'react-native';
 import React, {useState} from 'react';
 
 const FlatLists = () => {
@@ -32,20 +39,22 @@ const FlatLists = () => {
   };
   return (
     <View style={styles.container}>
-      <FlatList
-        data={datas}
-        renderItem={({item}) => {
-          return (
-            <TouchableOpacity
-              style={styles.DataView}
-              onPress={() => handleClick(item.id)}>
-              <Text style={styles.itemIdView}>{item.id}</Text>
-              <Text style={styles.itemNameView}>{item.name}</Text>
-            </TouchableOpacity>
-          );
-        }}
-        numColumns={2}
-      />
+      <SafeAreaView>
+        <FlatList
+          data={datas}
+          renderItem={({item}) => {
+            return (
+              <TouchableOpacity
+                style={styles.DataView}
+                onPress={() => handleClick(item.id)}>
+                <Text style={styles.itemIdView}>{item.id}</Text>
+                <Text style={styles.itemNameView}>{item.name}</Text>
+              </TouchableOpacity>
+            );
+          }}
+          numColumns={2}
+        />
+      </SafeAreaView>
     </View>
   );
 };
