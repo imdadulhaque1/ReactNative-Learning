@@ -1,9 +1,12 @@
+/* eslint-disable prettier/prettier */
 import {
   ImageBackground,
   SafeAreaView,
   StyleSheet,
+  ScrollView,
   Text,
   View,
+  Image,
 } from 'react-native';
 import React, {useEffect, useState} from 'react';
 import Axios from 'axios';
@@ -31,14 +34,35 @@ const FetchApiData = () => {
     <View style={styles.container}>
       <SafeAreaView>
         {/* <Text>FetchApiData</Text> */}
-        {postData.map((dataList, index) => {
-          console.log(dataList.title);
-          return (
-            <View style={styles.CardStyle} key={index}>
-              <Text style={{fontSize: 20, color: 'red'}}>{dataList.title}</Text>
-            </View>
-          );
-        })}
+        <ScrollView>
+          {postData.map((dataList, index) => {
+            // console.log(dataList);
+            return (
+              <View style={styles.CardStyle} key={index}>
+                <ImageBackground
+                  source={{uri: dataList.url}}
+                  resizeMode="cover"
+                  style={styles.cardImageStyle}>
+                  <Text
+                    style={{
+                      textAlign: 'center',
+                      fontSize: 30,
+                      fontWeight: 'bold',
+                      backgroundColor: 'white',
+                      borderWidth: 1,
+                      borderBottomColor: 'black',
+                      borderRadius: 100,
+                    }}>
+                    {dataList.id}
+                  </Text>
+                </ImageBackground>
+                <Text style={{fontSize: 16, color: 'red'}}>
+                  {dataList.title}
+                </Text>
+              </View>
+            );
+          })}
+        </ScrollView>
       </SafeAreaView>
     </View>
   );
@@ -48,15 +72,18 @@ export default FetchApiData;
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     padding: 3,
   },
   CardStyle: {
+    justifyContent: 'center',
+    height: 300,
     backgroundColor: '#3c4569',
-    margin:5,
+    margin: 5,
     paddingVertical: 10,
   },
-  imageStyle: {
+  cardImageStyle: {
     flex: 1,
-    width: '100%',
+    justifyContent: 'center',
   },
 });
