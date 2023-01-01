@@ -1,4 +1,11 @@
-import {StyleSheet, Text, View, TouchableOpacity, FlatList} from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  View,
+  TouchableOpacity,
+  FlatList,
+  SafeAreaView,
+} from 'react-native';
 import React, {useState} from 'react';
 
 const ExampleFlatList = () => {
@@ -32,21 +39,23 @@ const ExampleFlatList = () => {
   };
   return (
     <View style={styles.container}>
-      <FlatList
-        data={userData}
-        numColumns={2}
-        renderItem={({item}) => {
-          //   console.log(item.name);
-          return (
-            <TouchableOpacity
-              style={styles.cardStyle}
-              onPress={() => handleClicked(item.id)}>
-              <Text style={styles.idStyle}>{item.id}</Text>
-              <Text style={styles.nameStyle}>{item.name}</Text>
-            </TouchableOpacity>
-          );
-        }}
-      />
+      <SafeAreaView>
+        <FlatList
+          data={userData}
+          numColumns={2}
+          renderItem={({item}) => {
+            //   console.log(item.name);
+            return (
+              <TouchableOpacity
+                style={styles.cardStyle}
+                onPress={() => handleClicked(item.id)}>
+                <Text style={styles.idStyle}>{item.id}</Text>
+                <Text style={styles.nameStyle}>{item.name}</Text>
+              </TouchableOpacity>
+            );
+          }}
+        />
+      </SafeAreaView>
     </View>
   );
 };
@@ -56,6 +65,7 @@ export default ExampleFlatList;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: 'gray',
   },
   cardStyle: {
     flex: 1,

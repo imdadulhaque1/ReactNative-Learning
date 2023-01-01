@@ -5,6 +5,7 @@ import {
   Text,
   View,
   TouchableOpacity,
+  SafeAreaView,
 } from 'react-native';
 import React, {useState} from 'react';
 
@@ -21,18 +22,20 @@ const ArrayToList = () => {
   ]);
   return (
     <View style={styles.container}>
-      <ScrollView>
-        {data.map((dataList, index) => {
-          return (
-            <View style={styles.ListViewStyle} key={dataList.id}>
-              <TouchableOpacity style={styles.ListStyle}>
-                <Text style={styles.idStyle}>{dataList.id}</Text>
-                <Text style={styles.nameStyle}>{dataList.name}</Text>
-              </TouchableOpacity>
-            </View>
-          );
-        })}
-      </ScrollView>
+      <SafeAreaView>
+        <ScrollView>
+          {data.map((dataList, index) => {
+            return (
+              <View style={styles.ListViewStyle} key={dataList.id}>
+                <TouchableOpacity style={styles.ListStyle}>
+                  <Text style={styles.idStyle}>{dataList.id}</Text>
+                  <Text style={styles.nameStyle}>{dataList.name}</Text>
+                </TouchableOpacity>
+              </View>
+            );
+          })}
+        </ScrollView>
+      </SafeAreaView>
     </View>
   );
 };

@@ -4,13 +4,14 @@ import ViewTextFlexbox from './src/ViewTextFlexbox';
 import IncreDecrements from './src/IncreDecrements';
 import InputField from './src/InputField';
 import ArrayToList from './src/ArrayToList';
-import FlatList from './src/FlatLists';
+import FlatLists from './src/FlatLists';
 import ExampleFlatList from './src/ExampleFlatList';
+import FetchApiData from './src/FetchApiData';
 
 const App = () => {
   return (
     <>
-      <ExampleFlatList />
+      <FetchApiData />
     </>
   );
 };
