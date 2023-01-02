@@ -7,11 +7,12 @@ import ArrayToList from './src/ArrayToList';
 import FlatLists from './src/FlatLists';
 import ExampleFlatList from './src/ExampleFlatList';
 import FetchApiData from './src/FetchApiData';
+import DataFetchAnother from './src/DataFetchAnother';
 
 const App = () => {
   return (
     <>
-      <FetchApiData />
+      <DataFetchAnother />
     </>
   );
 };
