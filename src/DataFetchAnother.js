@@ -20,29 +20,33 @@ const DataFetchAnother = () => {
   const dataFetchFunc = async () => {
     try {
       const response = await Axios.get(userPostsUrl);
-      //   console.log(response.data);
+      // console.log(response.data);
       setUserPost(response.data);
     } catch (error) {
       console.log(error);
     }
   };
-  const duplicateUserSlicing = () => {};
+
   return (
     <View style={styles.container}>
       <SafeAreaView>
-        <FlatList
-          data={userPost}
-          numColumns={4}
-          renderItem={({item}) => {
-            return (
-              <View style={styles.userMainBtnStyle}>
-                <TouchableOpacity style={styles.userBtnStyle}>
-                  <Text style={styles.userBtnTxtStyle}>User {item.userId}</Text>
-                </TouchableOpacity>
-              </View>
-            );
-          }}
-        />
+        <View style={{maxHeight: 110}}>
+          <FlatList
+            data={userPost}
+            numColumns={4}
+            renderItem={({item}) => {
+              return (
+                <View style={styles.userMainBtnStyle}>
+                  <TouchableOpacity style={styles.userBtnStyle}>
+                    <Text style={styles.userBtnTxtStyle}>
+                      User {item.userId}
+                    </Text>
+                  </TouchableOpacity>
+                </View>
+              );
+            }}
+          />
+        </View>
 
         <ScrollView>
           {userPost.map((postList, index) => {
