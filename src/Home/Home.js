@@ -2,6 +2,7 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import Button from '../Reuseable/Button';
+import HeaderCom from '../Reuseable/HeaderCom';
 
 const Home = ({navigation}) => {
   function handleNavigate(screenName) {
@@ -47,6 +48,8 @@ const Home = ({navigation}) => {
           onPress={() => handleNavigate('DataFetchAnother')}
         />
       </View>
+
+      <HeaderCom />
     </View>
   );
 };

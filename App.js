@@ -39,6 +39,7 @@ function App() {
           name="IncreDecrements"
           component={IncreDecrements}
           options={{
+            headerShown: false,
             title: 'Increments & Decrements',
             headerTitleAlign: 'center',
             headerTitleStyle: {

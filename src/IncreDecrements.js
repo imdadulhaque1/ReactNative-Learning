@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 import React, {useState} from 'react';
 import BackButton from './Reuseable/BackButton';
+import HeaderCom from './Reuseable/HeaderCom';
 
 const IncreDecrements = () => {
   const [counter, setCounter] = useState(0);
@@ -21,7 +22,7 @@ const IncreDecrements = () => {
   };
   return (
     <SafeAreaView>
-      <BackButton />
+      <HeaderCom />
       <View style={styles.container}>
         <View>
           <Text style={styles.counterText}>{counter}</Text>
