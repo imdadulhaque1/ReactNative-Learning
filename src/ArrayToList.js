@@ -24,7 +24,6 @@ const ArrayToList = () => {
   return (
     <View style={styles.container}>
       <SafeAreaView>
-        <BackButton />
         <ScrollView>
           {data.map((dataList, index) => {
             return (

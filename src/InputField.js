@@ -22,7 +22,6 @@ const InputField = () => {
   };
   return (
     <View style={styles.container}>
-      <BackButton />
       <SafeAreaView>
         <View style={styles.inputView}>
           <TextInput

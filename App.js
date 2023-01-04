@@ -14,6 +14,7 @@ import FetchApiData from './src/FetchApiData';
 import DataFetchAnother from './src/DataFetchAnother';
 import DuplicateUserRemove from './src/DuplicateUserRemove';
 import Home from './src/Home/Home';
+import BackButton from './src/Reuseable/BackButton';
 
 const Stack = createNativeStackNavigator();
 
@@ -39,7 +40,6 @@ function App() {
           name="IncreDecrements"
           component={IncreDecrements}
           options={{
-            headerShown: false,
             title: 'Increments & Decrements',
             headerTitleAlign: 'center',
             headerTitleStyle: {
@@ -48,6 +48,7 @@ function App() {
             headerStyle: {
               backgroundColor: '#0C1A2C',
             },
+            headerLeft: () => <BackButton />,
           }}
         />
         <Stack.Screen
@@ -62,6 +63,7 @@ function App() {
             headerStyle: {
               backgroundColor: '#0C1A2C',
             },
+            headerLeft: () => <BackButton />,
           }}
         />
         <Stack.Screen
@@ -76,6 +78,7 @@ function App() {
             headerStyle: {
               backgroundColor: '#0C1A2C',
             },
+            headerLeft: () => <BackButton />,
           }}
         />
         <Stack.Screen
@@ -90,6 +93,7 @@ function App() {
             headerStyle: {
               backgroundColor: '#0C1A2C',
             },
+            headerLeft: () => <BackButton />,
           }}
         />
         <Stack.Screen
@@ -104,6 +108,7 @@ function App() {
             headerStyle: {
               backgroundColor: '#0C1A2C',
             },
+            headerLeft: () => <BackButton />,
           }}
         />
         <Stack.Screen
@@ -118,6 +123,7 @@ function App() {
             headerStyle: {
               backgroundColor: '#0C1A2C',
             },
+            headerLeft: () => <BackButton />,
           }}
         />
         <Stack.Screen
@@ -132,6 +138,7 @@ function App() {
             headerStyle: {
               backgroundColor: '#0C1A2C',
             },
+            headerLeft: () => <BackButton />,
           }}
         />
       </Stack.Navigator>

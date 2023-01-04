@@ -22,7 +22,6 @@ const IncreDecrements = () => {
   };
   return (
     <SafeAreaView>
-      <HeaderCom />
       <View style={styles.container}>
         <View>
           <Text style={styles.counterText}>{counter}</Text>

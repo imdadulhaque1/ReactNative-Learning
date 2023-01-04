@@ -42,7 +42,6 @@ const ExampleFlatList = () => {
   return (
     <View style={styles.container}>
       <SafeAreaView>
-        {/* <BackButton /> */}
         <FlatList
           data={userData}
           numColumns={2}

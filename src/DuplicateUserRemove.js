@@ -38,8 +38,6 @@ const test = () => {
 
   return (
     <View>
-      {/* <Button title="remove duplicate" onPress={handleRemove} /> */}
-
       {testState.map((item, index) => {
         return (
           <View key={index.id}>
