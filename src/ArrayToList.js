@@ -8,6 +8,7 @@ import {
   SafeAreaView,
 } from 'react-native';
 import React, {useState} from 'react';
+import BackButton from './Reuseable/BackButton';
 
 const ArrayToList = () => {
   const [data, setData] = useState([
@@ -23,6 +24,7 @@ const ArrayToList = () => {
   return (
     <View style={styles.container}>
       <SafeAreaView>
+        <BackButton />
         <ScrollView>
           {data.map((dataList, index) => {
             return (

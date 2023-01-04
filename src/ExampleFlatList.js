@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import {
   StyleSheet,
   Text,
@@ -7,6 +8,7 @@ import {
   SafeAreaView,
 } from 'react-native';
 import React, {useState} from 'react';
+import BackButton from './Reuseable/BackButton';
 
 const ExampleFlatList = () => {
   const [userData, setUserData] = useState([
@@ -40,6 +42,7 @@ const ExampleFlatList = () => {
   return (
     <View style={styles.container}>
       <SafeAreaView>
+        {/* <BackButton /> */}
         <FlatList
           data={userData}
           numColumns={2}
