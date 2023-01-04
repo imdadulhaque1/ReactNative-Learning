@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import {
   Button,
   SafeAreaView,
@@ -7,6 +8,7 @@ import {
   View,
 } from 'react-native';
 import React, {useState} from 'react';
+import BackButton from './Reuseable/BackButton';
 
 const IncreDecrements = () => {
   const [counter, setCounter] = useState(0);
@@ -19,6 +21,7 @@ const IncreDecrements = () => {
   };
   return (
     <SafeAreaView>
+      <BackButton />
       <View style={styles.container}>
         <View>
           <Text style={styles.counterText}>{counter}</Text>

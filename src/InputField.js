@@ -9,6 +9,7 @@ import {
   SafeAreaView,
 } from 'react-native';
 import React, {useState} from 'react';
+import BackButton from './Reuseable/BackButton';
 
 const InputField = () => {
   const [userName, setUserName] = useState('Imdadul Haque');
@@ -21,6 +22,7 @@ const InputField = () => {
   };
   return (
     <View style={styles.container}>
+      <BackButton />
       <SafeAreaView>
         <View style={styles.inputView}>
           <TextInput

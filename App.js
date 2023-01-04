@@ -35,6 +35,104 @@ function App() {
             },
           }}
         />
+        <Stack.Screen
+          name="IncreDecrements"
+          component={IncreDecrements}
+          options={{
+            title: 'Increments & Decrements',
+            headerTitleAlign: 'center',
+            headerTitleStyle: {
+              color: '#fff',
+            },
+            headerStyle: {
+              backgroundColor: '#0C1A2C',
+            },
+          }}
+        />
+        <Stack.Screen
+          name="InputField"
+          component={InputField}
+          options={{
+            title: 'Working with InputField',
+            headerTitleAlign: 'center',
+            headerTitleStyle: {
+              color: '#fff',
+            },
+            headerStyle: {
+              backgroundColor: '#0C1A2C',
+            },
+          }}
+        />
+        <Stack.Screen
+          name="ArrayToList"
+          component={ArrayToList}
+          options={{
+            title: 'Working with Array',
+            headerTitleAlign: 'center',
+            headerTitleStyle: {
+              color: '#fff',
+            },
+            headerStyle: {
+              backgroundColor: '#0C1A2C',
+            },
+          }}
+        />
+        <Stack.Screen
+          name="FlatLists"
+          component={FlatLists}
+          options={{
+            title: 'FlatList & Remove Item',
+            headerTitleAlign: 'center',
+            headerTitleStyle: {
+              color: '#fff',
+            },
+            headerStyle: {
+              backgroundColor: '#0C1A2C',
+            },
+          }}
+        />
+        <Stack.Screen
+          name="ExampleFlatList"
+          component={ExampleFlatList}
+          options={{
+            title: 'Advancedly Working with FlatList',
+            headerTitleAlign: 'center',
+            headerTitleStyle: {
+              color: '#fff',
+            },
+            headerStyle: {
+              backgroundColor: '#0C1A2C',
+            },
+          }}
+        />
+        <Stack.Screen
+          name="FetchApiData"
+          component={FetchApiData}
+          options={{
+            title: 'Working with FetchAPI',
+            headerTitleAlign: 'center',
+            headerTitleStyle: {
+              color: '#fff',
+            },
+            headerStyle: {
+              backgroundColor: '#0C1A2C',
+            },
+          }}
+        />
+        <Stack.Screen
+          name="DataFetchAnother"
+          component={DataFetchAnother}
+          options={{
+            title: 'Advancedly Working with FetchAPI',
+            headerTitleAlign: 'center',
+            headerTitleStyle: {
+              color: '#fff',
+            },
+            headerStyle: {
+              backgroundColor: '#0C1A2C',
+            },
+          }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
