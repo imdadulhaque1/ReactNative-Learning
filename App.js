@@ -15,6 +15,8 @@ import DataFetchAnother from './src/DataFetchAnother';
 import DuplicateUserRemove from './src/DuplicateUserRemove';
 import Home from './src/Home/Home';
 import BackButton from './src/Reuseable/BackButton';
+import One from './src/DataPassingOne_Another/One';
+import Another from './src/DataPassingOne_Another/Another';
 
 const Stack = createNativeStackNavigator();
 
@@ -131,6 +133,36 @@ function App() {
           component={DataFetchAnother}
           options={{
             title: 'Advancedly Working with FetchAPI',
+            headerTitleAlign: 'center',
+            headerTitleStyle: {
+              color: '#fff',
+            },
+            headerStyle: {
+              backgroundColor: '#0C1A2C',
+            },
+            headerLeft: () => <BackButton />,
+          }}
+        />
+        <Stack.Screen
+          name="One"
+          component={One}
+          options={{
+            title: 'Data Send to Another',
+            headerTitleAlign: 'center',
+            headerTitleStyle: {
+              color: '#fff',
+            },
+            headerStyle: {
+              backgroundColor: '#0C1A2C',
+            },
+            headerLeft: () => <BackButton />,
+          }}
+        />
+        <Stack.Screen
+          name="Another"
+          component={Another}
+          options={{
+            title: 'Received from One',
             headerTitleAlign: 'center',
             headerTitleStyle: {
               color: '#fff',
