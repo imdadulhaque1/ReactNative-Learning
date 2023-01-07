@@ -1,7 +1,12 @@
+/* eslint-disable prettier/prettier */
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
+import {useRoute} from '@react-navigation/native';
 
-const Another = ({route, navigation}) => {
+const Another = () => {
+  const route = useRoute();
+  // console.log(route);
+  // const Another = ({route, navigation}) => {
   //   console.log(route.params);
   const {name, email, phone, description, password} = route.params;
 
