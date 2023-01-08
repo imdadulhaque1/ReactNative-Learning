@@ -17,7 +17,8 @@ import Home from './src/Home/Home';
 import BackButton from './src/Reuseable/BackButton';
 import One from './src/DataPassingOne_Another/One';
 import Another from './src/DataPassingOne_Another/Another';
-import HomeScreen from './src/Home/HomeScreen';
+import ButtomNavigation from './src/Navigation/ButtomNavigation/ButtonNavigation';
+import NavigationDrawer from './src/Navigation/NavigationDawer/NavigationDrawer';
 
 const Stack = createNativeStackNavigator();
 
@@ -26,8 +27,15 @@ function App() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
-          name="HomeScreen"
-          component={HomeScreen}
+          name="NavigationDrawer"
+          component={NavigationDrawer}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="ButtomNavigation"
+          component={ButtomNavigation}
           options={{
             headerShown: false,
           }}
