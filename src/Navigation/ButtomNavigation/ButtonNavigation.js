@@ -2,17 +2,17 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import Home from './Home';
-import DataFetchAnother from '../DataFetchAnother';
-import BackButton from '../Reuseable/BackButton';
+import Home from '../../Home/Home';
+import DataFetchAnother from '../../DataFetchAnother';
+import BackButton from '../../Reuseable/BackButton';
 import Ionicicons from 'react-native-vector-icons/Ionicons';
-import Notification from '../ButtomNavigation/Notification';
-import Album from '../ButtomNavigation/Album';
-import Menu from '../ButtomNavigation/Menu';
+import Notification from './Notification';
+import Album from './Album';
+import Menu from './Menu';
 
 const Tab = createBottomTabNavigator();
 
-const HomeScreen = () => {
+const ButtomNavigation = () => {
   return (
     <>
       <Tab.Navigator>
@@ -38,7 +38,7 @@ const HomeScreen = () => {
           component={Notification}
           options={{
             tabBarIcon: () => {
-              return <ButtomIconFunc name="information-circle-outline" />;
+              return <ButtomIconFunc name="notifications-circle-outline" />;
             },
             title: 'Notification',
             headerTitleAlign: 'center',
@@ -90,7 +90,7 @@ const HomeScreen = () => {
   );
 };
 
-export default HomeScreen;
+export default ButtomNavigation;
 
 const ButtomIconFunc = props => {
   return <Ionicicons name={props.name} size={24} />;
