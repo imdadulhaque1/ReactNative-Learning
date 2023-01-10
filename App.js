@@ -44,14 +44,15 @@ function App() {
           name="Home"
           component={Home}
           options={{
-            title: 'Hello React-Native',
-            headerTitleAlign: 'center',
-            headerTitleStyle: {
-              color: '#fff',
-            },
-            headerStyle: {
-              backgroundColor: '#0C1A2C',
-            },
+            headerShown: false,
+            // title: 'Hello React-Native',
+            // headerTitleAlign: 'center',
+            // headerTitleStyle: {
+            //   color: '#fff',
+            // },
+            // headerStyle: {
+            //   backgroundColor: '#0C1A2C',
+            // },
           }}
         />
         <Stack.Screen

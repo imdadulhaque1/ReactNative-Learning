@@ -23,14 +23,15 @@ const ButtomNavigation = () => {
             tabBarIcon: () => {
               return <ButtomIconFunc name="home-outline" />;
             },
-            title: 'Home',
-            headerTitleAlign: 'center',
-            headerTitleStyle: {
-              color: '#fff',
-            },
-            headerStyle: {
-              backgroundColor: '#0C1A2C',
-            },
+            headerShown: false,
+            // title: 'Home',
+            // headerTitleAlign: 'center',
+            // headerTitleStyle: {
+            //   color: '#fff',
+            // },
+            // headerStyle: {
+            //   backgroundColor: '#0C1A2C',
+            // },
           }}
         />
         <Tab.Screen
@@ -40,15 +41,16 @@ const ButtomNavigation = () => {
             tabBarIcon: () => {
               return <ButtomIconFunc name="notifications-circle-outline" />;
             },
-            title: 'Notification',
-            headerTitleAlign: 'center',
-            headerTitleStyle: {
-              color: '#fff',
-            },
-            headerStyle: {
-              backgroundColor: '#0C1A2C',
-            },
-            headerLeft: () => <BackButton />,
+            headerShown: false,
+            // title: 'Notification',
+            // headerTitleAlign: 'center',
+            // headerTitleStyle: {
+            //   color: '#fff',
+            // },
+            // headerStyle: {
+            //   backgroundColor: '#0C1A2C',
+            // },
+            // headerLeft: () => <BackButton />,
           }}
         />
         <Tab.Screen
@@ -58,15 +60,16 @@ const ButtomNavigation = () => {
             tabBarIcon: () => {
               return <ButtomIconFunc name="albums-outline" />;
             },
-            title: 'Album',
-            headerTitleAlign: 'center',
-            headerTitleStyle: {
-              color: '#fff',
-            },
-            headerStyle: {
-              backgroundColor: '#0C1A2C',
-            },
-            headerLeft: () => <BackButton />,
+            headerShown: false,
+            //   title: 'Album',
+            //   headerTitleAlign: 'center',
+            //   headerTitleStyle: {
+            //     color: '#fff',
+            //   },
+            //   headerStyle: {
+            //     backgroundColor: '#0C1A2C',
+            //   },
+            //   headerLeft: () => <BackButton />,
           }}
         />
         <Tab.Screen
@@ -74,15 +77,16 @@ const ButtomNavigation = () => {
           component={Menu}
           options={{
             tabBarIcon: () => <ButtomIconFunc name="menu-outline" />,
-            title: 'Menu',
-            headerTitleAlign: 'center',
-            headerTitleStyle: {
-              color: '#fff',
-            },
-            headerStyle: {
-              backgroundColor: '#0C1A2C',
-            },
-            headerLeft: () => <BackButton />,
+            headerShown: false,
+            // title: 'Menu',
+            // headerTitleAlign: 'center',
+            // headerTitleStyle: {
+            //   color: '#fff',
+            // },
+            // headerStyle: {
+            //   backgroundColor: '#0C1A2C',
+            // },
+            // headerLeft: () => <BackButton />,
           }}
         />
       </Tab.Navigator>
