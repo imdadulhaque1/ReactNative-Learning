@@ -71,5 +71,7 @@ const styles = StyleSheet.create({
   },
   btnStyle: {
     flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
