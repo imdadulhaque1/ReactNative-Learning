@@ -19,6 +19,7 @@ import One from './src/DataPassingOne_Another/One';
 import Another from './src/DataPassingOne_Another/Another';
 import ButtomNavigation from './src/Navigation/ButtomNavigation/ButtonNavigation';
 import NavigationDrawer from './src/Navigation/NavigationDawer/NavigationDrawer';
+import WebViewCom from './src/WebViewCom';
 
 const Stack = createNativeStackNavigator();
 
@@ -180,6 +181,21 @@ function App() {
           component={Another}
           options={{
             title: 'Received from One',
+            headerTitleAlign: 'center',
+            headerTitleStyle: {
+              color: '#fff',
+            },
+            headerStyle: {
+              backgroundColor: '#0C1A2C',
+            },
+            headerLeft: () => <BackButton />,
+          }}
+        />
+        <Stack.Screen
+          name="WebViewCom"
+          component={WebViewCom}
+          options={{
+            title: 'WebView',
             headerTitleAlign: 'center',
             headerTitleStyle: {
               color: '#fff',
