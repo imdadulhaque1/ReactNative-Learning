@@ -16,10 +16,10 @@ const WebViewCom = () => {
   const [goForward, setGoForward] = useState(false);
   const [title, setTitle] = useState('');
 
-  const goBackBtn = () => {
+  const handleGoBack = () => {
     webviewRef.current.goBack();
   };
-  const goForwardBtn = () => {
+  const handleGoForward = () => {
     webviewRef.current.goForward();
   };
   return (
@@ -29,14 +29,28 @@ const WebViewCom = () => {
           <Text style={styles.titleText}>{title}</Text>
         </View>
         <View style={styles.innerContainerTwo}>
-          <TouchableOpacity style={styles.bfBtn} onPress={() => goBackBtn()}>
+          <TouchableOpacity
+            style={styles.bfBtn}
+            disabled={!goBack}
+            onPress={() => handleGoBack()}>
             <Text style={styles.innerBtn}>
-              <AntDesign name="doubleleft" color="black" size={18} />
+              <AntDesign
+                name="doubleleft"
+                color={goBack ? '#000' : 'rgba(0,0,0,0.3)'}
+                size={18}
+              />
             </Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.bfBtn} onPress={() => goForwardBtn()}>
+          <TouchableOpacity
+            style={styles.bfBtn}
+            disabled={!goForward}
+            onPress={() => handleGoForward()}>
             <Text style={styles.innerBtn}>
-              <AntDesign name="doubleright" color="black" size={18} />
+              <AntDesign
+                name="doubleright"
+                color={goForward ? '#000' : 'rgba(0,0,0,0.3)'}
+                size={18}
+              />
             </Text>
           </TouchableOpacity>
         </View>
