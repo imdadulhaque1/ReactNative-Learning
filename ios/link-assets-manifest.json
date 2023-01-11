@@ -1,0 +1,13 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/ComicNeue-Regular.ttf",
+      "sha1": "3b8675efbb6b4e6d968e5d1ed8990d0a4d7f0db2"
+    },
+    {
+      "path": "assets/fonts/Rajdhani-Regular.ttf",
+      "sha1": "73f086047e7ff11a3087cd481f133f9080a9d954"
+    }
+  ]
+}
