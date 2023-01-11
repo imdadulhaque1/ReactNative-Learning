@@ -53,6 +53,12 @@ const Home = ({navigation}) => {
           onPress={() => handleNavigate('One')}
         />
       </View>
+      <View style={styles.btnStyle}>
+        <Button
+          btnTitle="WebView"
+          onPress={() => handleNavigate('WebViewCom')}
+        />
+      </View>
     </View>
   );
 };
