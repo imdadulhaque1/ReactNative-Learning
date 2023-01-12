@@ -64,6 +64,7 @@ const styles = StyleSheet.create({
   idStyle: {
     fontSize: 30,
     fontWeight: 'bold',
+    color: 'black',
   },
   nameStyle: {
     fontSize: 17,

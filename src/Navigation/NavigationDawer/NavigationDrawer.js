@@ -17,12 +17,28 @@ const NavigationDrawer = () => {
         <Drawer.Screen
           name="ButtomNavigation"
           component={ButtomNavigation}
-          options={{title: 'Buttom Navigation'}}
+          options={{
+            title: 'Buttom Navigation',
+            headerTitleStyle: {
+              color: '#fff',
+              fontFamily: 'Rajdhani-Bold',
+            },
+            headerStyle: {
+              backgroundColor: '#6c85ad',
+            },
+          }}
         />
         <Drawer.Screen
           name="Home"
           component={Home}
           options={{
+            headerTitleStyle: {
+              color: '#fff',
+              fontFamily: 'Rajdhani-Bold',
+            },
+            headerStyle: {
+              backgroundColor: '#6c85ad',
+            },
             drawerIcon: () => {
               return <DrawerIconFunc name="home-outline" />;
             },
@@ -32,6 +48,13 @@ const NavigationDrawer = () => {
           name="Notification"
           component={Notification}
           options={{
+            headerTitleStyle: {
+              color: '#fff',
+              fontFamily: 'Rajdhani-Bold',
+            },
+            headerStyle: {
+              backgroundColor: '#6c85ad',
+            },
             drawerIcon: () => {
               return <DrawerIconFunc name="notifications-circle-outline" />;
             },
@@ -41,6 +64,13 @@ const NavigationDrawer = () => {
           name="Album"
           component={Album}
           options={{
+            headerTitleStyle: {
+              color: '#fff',
+              fontFamily: 'Rajdhani-Bold',
+            },
+            headerStyle: {
+              backgroundColor: '#6c85ad',
+            },
             drawerIcon: () => {
               return <DrawerIconFunc name="albums-outline" />;
             },
@@ -50,6 +80,13 @@ const NavigationDrawer = () => {
           name="Menu"
           component={Menu}
           options={{
+            headerTitleStyle: {
+              color: '#fff',
+              fontFamily: 'Rajdhani-Bold',
+            },
+            headerStyle: {
+              backgroundColor: '#6c85ad',
+            },
             drawerIcon: () => {
               return <DrawerIconFunc name="menu-outline" />;
             },

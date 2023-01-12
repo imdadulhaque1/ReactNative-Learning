@@ -41,7 +41,7 @@ const test = () => {
       {testState.map((item, index) => {
         return (
           <View key={index.id}>
-            <Text>{item.name}</Text>
+            <Text style={{color: 'black'}}>{item.name}</Text>
           </View>
         );
       })}

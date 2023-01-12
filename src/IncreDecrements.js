@@ -59,6 +59,7 @@ const styles = StyleSheet.create({
   },
   counterText: {
     fontSize: 30,
+    color: 'black',
   },
   BtnView: {
     flexDirection: 'row',

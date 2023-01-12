@@ -85,5 +85,6 @@ const styles = StyleSheet.create({
   },
   nameStyle: {
     fontSize: 20,
+    color: 'black',
   },
 });
