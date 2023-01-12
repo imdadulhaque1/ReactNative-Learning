@@ -8,8 +8,6 @@ import {
   View,
 } from 'react-native';
 import React, {useState} from 'react';
-import BackButton from './Reuseable/BackButton';
-import HeaderCom from './Reuseable/HeaderCom';
 
 const IncreDecrements = () => {
   const [counter, setCounter] = useState(0);
