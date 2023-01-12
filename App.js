@@ -64,6 +64,7 @@ function App() {
             headerTitleAlign: 'center',
             headerTitleStyle: {
               color: '#fff',
+              fontFamily: 'Rajdhani-Bold',
             },
             headerStyle: {
               backgroundColor: '#0C1A2C',
@@ -79,6 +80,7 @@ function App() {
             headerTitleAlign: 'center',
             headerTitleStyle: {
               color: '#fff',
+              fontFamily: 'Rajdhani-Bold',
             },
             headerStyle: {
               backgroundColor: '#0C1A2C',
@@ -94,6 +96,7 @@ function App() {
             headerTitleAlign: 'center',
             headerTitleStyle: {
               color: '#fff',
+              fontFamily: 'Rajdhani-Bold',
             },
             headerStyle: {
               backgroundColor: '#0C1A2C',
@@ -109,6 +112,7 @@ function App() {
             headerTitleAlign: 'center',
             headerTitleStyle: {
               color: '#fff',
+              fontFamily: 'Rajdhani-Bold',
             },
             headerStyle: {
               backgroundColor: '#0C1A2C',
@@ -124,6 +128,7 @@ function App() {
             headerTitleAlign: 'center',
             headerTitleStyle: {
               color: '#fff',
+              fontFamily: 'Rajdhani-Bold',
             },
             headerStyle: {
               backgroundColor: '#0C1A2C',
@@ -139,6 +144,7 @@ function App() {
             headerTitleAlign: 'center',
             headerTitleStyle: {
               color: '#fff',
+              fontFamily: 'Rajdhani-Bold',
             },
             headerStyle: {
               backgroundColor: '#0C1A2C',
@@ -154,6 +160,7 @@ function App() {
             headerTitleAlign: 'center',
             headerTitleStyle: {
               color: '#fff',
+              fontFamily: 'Rajdhani-Bold',
             },
             headerStyle: {
               backgroundColor: '#0C1A2C',
@@ -169,6 +176,7 @@ function App() {
             headerTitleAlign: 'center',
             headerTitleStyle: {
               color: '#fff',
+              fontFamily: 'Rajdhani-Bold',
             },
             headerStyle: {
               backgroundColor: '#0C1A2C',
@@ -184,6 +192,7 @@ function App() {
             headerTitleAlign: 'center',
             headerTitleStyle: {
               color: '#fff',
+              fontFamily: 'Rajdhani-Bold',
             },
             headerStyle: {
               backgroundColor: '#0C1A2C',
@@ -199,6 +208,7 @@ function App() {
             headerTitleAlign: 'center',
             headerTitleStyle: {
               color: '#fff',
+              fontFamily: 'Rajdhani-Bold',
             },
             headerStyle: {
               backgroundColor: '#0C1A2C',

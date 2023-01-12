@@ -82,5 +82,6 @@ const styles = StyleSheet.create({
   },
   itemNameView: {
     fontSize: 19,
+    color: 'black',
   },
 });

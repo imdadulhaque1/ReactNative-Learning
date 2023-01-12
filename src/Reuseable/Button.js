@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
   btnRes: {
     flexL: 1,
     backgroundColor: '#5054a6',
-    padding: 10,
+    padding: 12,
     borderColor: 'black',
     borderRadius: 7,
     borderWidth: 1,
@@ -30,6 +30,7 @@ const styles = StyleSheet.create({
     fontSize: 17,
     color: 'white',
     textAlign: 'center',
+    fontFamily: 'Rajdhani-Regular',
   },
 });
 

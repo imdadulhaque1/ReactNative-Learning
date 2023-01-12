@@ -9,7 +9,6 @@ import {
   SafeAreaView,
 } from 'react-native';
 import React, {useState} from 'react';
-import BackButton from './Reuseable/BackButton';
 
 const InputField = () => {
   const [userName, setUserName] = useState('Imdadul Haque');
@@ -54,10 +53,10 @@ const InputField = () => {
           />
         </View>
         <View styles={styles.inputShowStyle}>
-          <Text>Name: {userName}</Text>
-          <Text>Email: {userEmail}</Text>
-          <Text>Password: {userPassword}</Text>
-          <Text>Confirm Pass: {userConfirmPass}</Text>
+          <Text style={styles.textColor}>Name: {userName}</Text>
+          <Text style={styles.textColor}>Email: {userEmail}</Text>
+          <Text style={styles.textColor}>Password: {userPassword}</Text>
+          <Text style={styles.textColor}>Confirm Pass: {userConfirmPass}</Text>
         </View>
         <View>
           <TouchableOpacity
@@ -90,6 +89,10 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     marginVertical: 5,
     padding: 10,
+    color: 'black',
+  },
+  textColor: {
+    color: 'black',
   },
   inputShowStyle: {
     // marginVertical: 5,
