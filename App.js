@@ -18,6 +18,8 @@ import Another from './src/DataPassingOne_Another/Another';
 import ButtomNavigation from './src/Navigation/ButtomNavigation/ButtonNavigation';
 import NavigationDrawer from './src/Navigation/NavigationDawer/NavigationDrawer';
 import WebViewCom from './src/screen/WebViewCom';
+import HSS_Web from './src/HelloSuperStars/HSS_Web';
+import HelloSuperStars from './src/HelloSuperStars/HelloSuperStars';
 
 const Stack = createNativeStackNavigator();
 
@@ -203,6 +205,38 @@ function App() {
           component={WebViewCom}
           options={{
             title: 'WebView',
+            headerTitleAlign: 'center',
+            headerTitleStyle: {
+              color: '#fff',
+              fontFamily: 'Rajdhani-Bold',
+            },
+            headerStyle: {
+              backgroundColor: '#0C1A2C',
+            },
+            headerLeft: () => <BackButton />,
+          }}
+        />
+        <Stack.Screen
+          name="HSS_Web"
+          component={HSS_Web}
+          options={{
+            title: 'Hello Super Stars Web',
+            headerTitleAlign: 'center',
+            headerTitleStyle: {
+              color: '#fff',
+              fontFamily: 'Rajdhani-Bold',
+            },
+            headerStyle: {
+              backgroundColor: '#0C1A2C',
+            },
+            headerLeft: () => <BackButton />,
+          }}
+        />
+        <Stack.Screen
+          name="HelloSuperStars"
+          component={HelloSuperStars}
+          options={{
+            title: 'Hello Super Stars',
             headerTitleAlign: 'center',
             headerTitleStyle: {
               color: '#fff',
