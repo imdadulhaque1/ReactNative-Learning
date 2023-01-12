@@ -3,8 +3,6 @@ import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Home from '../../Home/Home';
-import DataFetchAnother from '../../DataFetchAnother';
-import BackButton from '../../Reuseable/BackButton';
 import Ionicicons from 'react-native-vector-icons/Ionicons';
 import Notification from './Notification';
 import Album from './Album';

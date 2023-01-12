@@ -4,22 +4,20 @@ import {View, Text} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-import ViewTextFlexbox from './src/ViewTextFlexbox';
-import IncreDecrements from './src/IncreDecrements';
-import InputField from './src/InputField';
-import ArrayToList from './src/ArrayToList';
-import FlatLists from './src/FlatLists';
-import ExampleFlatList from './src/ExampleFlatList';
-import FetchApiData from './src/FetchApiData';
-import DataFetchAnother from './src/DataFetchAnother';
-import DuplicateUserRemove from './src/DuplicateUserRemove';
+import IncreDecrements from './src/screen/IncreDecrements';
+import InputField from './src/screen/InputField';
+import ArrayToList from './src/screen/ArrayToList';
+import FlatLists from './src/screen/FlatLists';
+import ExampleFlatList from './src/screen/ExampleFlatList';
+import FetchApiData from './src/screen/FetchApiData';
+import DataFetchAnother from './src/screen/DataFetchAnother';
 import Home from './src/Home/Home';
 import BackButton from './src/Reuseable/BackButton';
 import One from './src/DataPassingOne_Another/One';
 import Another from './src/DataPassingOne_Another/Another';
 import ButtomNavigation from './src/Navigation/ButtomNavigation/ButtonNavigation';
 import NavigationDrawer from './src/Navigation/NavigationDawer/NavigationDrawer';
-import WebViewCom from './src/WebViewCom';
+import WebViewCom from './src/screen/WebViewCom';
 
 const Stack = createNativeStackNavigator();
 

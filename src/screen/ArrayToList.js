@@ -8,7 +8,6 @@ import {
   SafeAreaView,
 } from 'react-native';
 import React, {useState} from 'react';
-import BackButton from './Reuseable/BackButton';
 
 const ArrayToList = () => {
   const [data, setData] = useState([

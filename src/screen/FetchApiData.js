@@ -6,14 +6,12 @@ import {
   ScrollView,
   Text,
   View,
-  Image,
 } from 'react-native';
 import React, {useEffect, useState} from 'react';
 import Axios from 'axios';
 
 // Import URL
 import {albumPhotoUrl} from './utils/Url';
-import Love from './Assets/Images/love.jpeg';
 
 const FetchApiData = () => {
   const [postData, setPostData] = useState([]);
