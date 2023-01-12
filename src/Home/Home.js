@@ -59,6 +59,16 @@ const Home = ({navigation}) => {
           onPress={() => handleNavigate('WebViewCom')}
         />
       </View>
+      <View style={styles.btnStyle}>
+        <Button
+          btnTitle="HelloSuperStars Web"
+          onPress={() => handleNavigate('HSS_Web')}
+        />
+        <Button
+          btnTitle="Hello Super Stars"
+          onPress={() => handleNavigate('HelloSuperStars')}
+        />
+      </View>
     </View>
   );
 };
