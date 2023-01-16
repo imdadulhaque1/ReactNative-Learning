@@ -69,6 +69,12 @@ const Home = ({navigation}) => {
           onPress={() => handleNavigate('HelloSuperStars')}
         />
       </View>
+      <View style={styles.btnStyle}>
+        <Button
+          btnTitle="Async Storage"
+          onPress={() => handleNavigate('AsyncStorageComp')}
+        />
+      </View>
     </View>
   );
 };
