@@ -2,10 +2,12 @@
 import {StyleSheet, View} from 'react-native';
 import React from 'react';
 import WebView from 'react-native-webview';
+import ProgessBar from 'react-native-progress/Bar';
 
 const HSS_HomeScreen = () => {
   return (
     <View style={styles.container}>
+      <ProgessBar />
       <WebView
         style={styles.webviewStyle}
         onError={event => {
