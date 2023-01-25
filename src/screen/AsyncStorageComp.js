@@ -6,8 +6,6 @@ import {
   TextInput,
   View,
   ScrollView,
-  TouchableOpacity,
-  Alert,
 } from 'react-native';
 import React, {useState} from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -18,7 +16,7 @@ const AsyncStorageComp = () => {
   const [email, setEmail] = useState('');
   const [uniName, setUniName] = useState('');
   const [password, setPassword] = useState('');
-  const [storedData, setStoredData] = useState('');
+  const [storedData, setStoredData] = useState([]);
 
   const handleSubmit = async () => {
     // Alert.alert(`Name:${name}\nEmail:${email}\nUniName:${uniName}`);
@@ -48,24 +46,28 @@ const AsyncStorageComp = () => {
             <TextInput
               style={styles.inputStyle}
               value={name}
+              placeholderTextColor="gray"
               placeholder="Enter your name.............."
               onChangeText={textChange => setName(textChange)}
             />
             <TextInput
               style={styles.inputStyle}
               value={email}
+              placeholderTextColor="gray"
               placeholder="Enter your email............."
               onChangeText={textChange => setEmail(textChange)}
             />
             <TextInput
               style={styles.inputStyle}
               value={uniName}
+              placeholderTextColor="gray"
               placeholder="Enter your university name...."
               onChangeText={textChange => setUniName(textChange)}
             />
             <TextInput
               style={styles.inputStyle}
               value={password}
+              placeholderTextColor="gray"
               placeholder="Enter your password..........."
               onChangeText={textChange => setPassword(textChange)}
             />
@@ -95,6 +97,7 @@ const styles = StyleSheet.create({
     marginVertical: 5,
   },
   inputStyle: {
+    color: 'black',
     borderColor: '#262180',
     borderWidth: 1,
     borderRadius: 10,
