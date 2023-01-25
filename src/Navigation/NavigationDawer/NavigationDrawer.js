@@ -98,7 +98,7 @@ const NavigationDrawer = () => {
 };
 
 const DrawerIconFunc = props => {
-  return <Ionicicons name={props.name} size={24} />;
+  return <Ionicicons name={props.name} size={24} color="#132D57" />;
 };
 
 export default NavigationDrawer;

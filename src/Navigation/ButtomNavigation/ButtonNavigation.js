@@ -95,7 +95,7 @@ const ButtomNavigation = () => {
 export default ButtomNavigation;
 
 const ButtomIconFunc = props => {
-  return <Ionicicons name={props.name} size={24} />;
+  return <Ionicicons name={props.name} size={24} color="#132D57" />;
 };
 
 const styles = StyleSheet.create({});
