@@ -80,6 +80,12 @@ const Home = ({navigation}) => {
             onPress={() => handleNavigate('StoreArrayInAsyncStorage')}
           />
         </View>
+        <View style={styles.btnStyle}>
+          <Button
+            btnTitle="Responsive Portrait Landscape"
+            onPress={() => handleNavigate('PortraitLandscape')}
+          />
+        </View>
       </ScrollView>
     </View>
   );
