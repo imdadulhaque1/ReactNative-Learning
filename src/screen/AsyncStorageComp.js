@@ -72,7 +72,7 @@ const AsyncStorageComp = () => {
               onChangeText={textChange => setPassword(textChange)}
             />
           </View>
-          <View style={styles.btnContainer}>
+          <View>
             <Button btnTitle="Submit" onPress={() => handleSubmit()} />
           </View>
           <View style={styles.dataViewContainer}>
