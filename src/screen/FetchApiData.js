@@ -11,7 +11,7 @@ import React, {useEffect, useState} from 'react';
 import Axios from 'axios';
 
 // Import URL
-import {albumPhotoUrl} from './utils/Url';
+import {albumPhotoUrl} from '../utils/Url';
 
 const FetchApiData = () => {
   const [postData, setPostData] = useState([]);

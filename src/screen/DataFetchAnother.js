@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 import React, {useEffect, useState} from 'react';
 import Axios from 'axios';
-import {userOnePostUrl, userPostsUrl} from './utils/Url';
+import {userOnePostUrl, userPostsUrl} from '../utils/Url';
 
 const DataFetchAnother = () => {
   const [userPost, setUserPost] = useState([]);
