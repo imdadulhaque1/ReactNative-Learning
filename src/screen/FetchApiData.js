@@ -11,18 +11,16 @@ import React, {useEffect, useState} from 'react';
 import Axios from 'axios';
 
 // Import URL
-import {albumPhotoUrl} from './utils/Url';
+import {albumPhotoUrl} from '../utils/Url';
 
 const FetchApiData = () => {
   const [postData, setPostData] = useState([]);
-  //   console.log(albumPhotoUrl);
   useEffect(() => {
     fetchData();
   }, []);
   const fetchData = async () => {
     try {
       const response = await Axios.get(albumPhotoUrl);
-      //   console.log(response.data);
       setPostData(response.data);
     } catch (error) {
       console.log(error);
@@ -31,10 +29,8 @@ const FetchApiData = () => {
   return (
     <View style={styles.container}>
       <SafeAreaView>
-        {/* <Text>FetchApiData</Text> */}
         <ScrollView>
           {postData.map((dataList, index) => {
-            // console.log(dataList);
             return (
               <View style={styles.CardStyle} key={index}>
                 <ImageBackground
@@ -74,6 +70,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   dataListStyle: {
+    color: 'gray',
     textAlign: 'center',
     fontSize: 30,
     fontWeight: 'bold',
