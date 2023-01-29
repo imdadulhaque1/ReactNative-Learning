@@ -41,18 +41,7 @@ const FetchApiData = () => {
                   source={{uri: dataList.url}}
                   resizeMode="cover"
                   style={styles.cardImageStyle}>
-                  <Text
-                    style={{
-                      textAlign: 'center',
-                      fontSize: 30,
-                      fontWeight: 'bold',
-                      backgroundColor: 'white',
-                      borderWidth: 1,
-                      borderBottomColor: 'black',
-                      borderRadius: 100,
-                    }}>
-                    {dataList.id}
-                  </Text>
+                  <Text style={styles.dataListStyle}>{dataList.id}</Text>
                 </ImageBackground>
                 <Text style={{fontSize: 16, color: 'red'}}>
                   {dataList.title}
@@ -83,5 +72,14 @@ const styles = StyleSheet.create({
   cardImageStyle: {
     flex: 1,
     justifyContent: 'center',
+  },
+  dataListStyle: {
+    textAlign: 'center',
+    fontSize: 30,
+    fontWeight: 'bold',
+    backgroundColor: 'white',
+    borderWidth: 1,
+    borderBottomColor: 'black',
+    borderRadius: 100,
   },
 });
