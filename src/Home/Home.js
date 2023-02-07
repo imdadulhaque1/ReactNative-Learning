@@ -86,6 +86,12 @@ const Home = ({navigation}) => {
             onPress={() => handleNavigate('PortraitLandscape')}
           />
         </View>
+        <View style={styles.btnStyle}>
+          <Button
+            btnTitle="Customized TextIput"
+            onPress={() => handleNavigate('CustomizedTextInput')}
+          />
+        </View>
       </ScrollView>
     </View>
   );
