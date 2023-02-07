@@ -23,6 +23,7 @@ import HelloSuperStars from './src/HelloSuperStars/HelloSuperStars';
 import AsyncStorageComp from './src/screen/AsyncStorageComp';
 import StoreArrayInAsyncStorage from './src/screen/StoreArrayInAsyncStorage';
 import PortraitLandscape from './src/screen/PortraitLandscape';
+import CustomizedTextInput from './src/screen/CustomizedTextInput';
 
 const Stack = createNativeStackNavigator();
 
@@ -288,6 +289,22 @@ function App() {
           component={PortraitLandscape}
           options={{
             title: 'Responsive Portrait Landscape',
+            headerTitleAlign: 'center',
+            headerTitleStyle: {
+              color: '#fff',
+              fontFamily: 'Rajdhani-Bold',
+            },
+            headerStyle: {
+              backgroundColor: '#0C1A2C',
+            },
+            headerLeft: () => <BackButton />,
+          }}
+        />
+        <Stack.Screen
+          name="CustomizedTextInput"
+          component={CustomizedTextInput}
+          options={{
+            title: 'Customized TextInput',
             headerTitleAlign: 'center',
             headerTitleStyle: {
               color: '#fff',
