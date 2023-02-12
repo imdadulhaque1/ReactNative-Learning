@@ -92,6 +92,12 @@ const Home = ({navigation}) => {
             onPress={() => handleNavigate('CustomizedTextInput')}
           />
         </View>
+        <View style={styles.btnStyle}>
+          <Button
+            btnTitle="Auth Screen"
+            onPress={() => handleNavigate('AuthScreen')}
+          />
+        </View>
       </ScrollView>
     </View>
   );

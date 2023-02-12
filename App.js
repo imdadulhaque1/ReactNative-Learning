@@ -24,6 +24,9 @@ import AsyncStorageComp from './src/screen/AsyncStorageComp';
 import StoreArrayInAsyncStorage from './src/screen/StoreArrayInAsyncStorage';
 import PortraitLandscape from './src/screen/PortraitLandscape';
 import CustomizedTextInput from './src/screen/CustomizedTextInput';
+import AuthScreen from './src/screen/AuthScreen';
+import Login from './src/AuthScreen/Login';
+import Signup from './src/AuthScreen/Signup';
 
 const Stack = createNativeStackNavigator();
 
@@ -305,6 +308,54 @@ function App() {
           component={CustomizedTextInput}
           options={{
             title: 'Customized TextInput',
+            headerTitleAlign: 'center',
+            headerTitleStyle: {
+              color: '#fff',
+              fontFamily: 'Rajdhani-Bold',
+            },
+            headerStyle: {
+              backgroundColor: '#0C1A2C',
+            },
+            headerLeft: () => <BackButton />,
+          }}
+        />
+        <Stack.Screen
+          name="AuthScreen"
+          component={AuthScreen}
+          options={{
+            title: 'Auth Screen',
+            headerTitleAlign: 'center',
+            headerTitleStyle: {
+              color: '#fff',
+              fontFamily: 'Rajdhani-Bold',
+            },
+            headerStyle: {
+              backgroundColor: '#0C1A2C',
+            },
+            headerLeft: () => <BackButton />,
+          }}
+        />
+        <Stack.Screen
+          name="Login"
+          component={Login}
+          options={{
+            title: 'Login',
+            headerTitleAlign: 'center',
+            headerTitleStyle: {
+              color: '#fff',
+              fontFamily: 'Rajdhani-Bold',
+            },
+            headerStyle: {
+              backgroundColor: '#0C1A2C',
+            },
+            headerLeft: () => <BackButton />,
+          }}
+        />
+        <Stack.Screen
+          name="Signup"
+          component={Signup}
+          options={{
+            title: 'Signup',
             headerTitleAlign: 'center',
             headerTitleStyle: {
               color: '#fff',
