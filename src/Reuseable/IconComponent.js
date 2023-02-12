@@ -7,7 +7,7 @@ import React from 'react';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 
 const IconComponent = props => {
-  return <FontAwesome5 name={props.name} size={24} color="#132D57" />;
+  return <FontAwesome5 name={props.name} size={18} color="#132D57" />;
 };
 export default IconComponent;
 

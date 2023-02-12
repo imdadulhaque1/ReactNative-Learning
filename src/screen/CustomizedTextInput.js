@@ -1,8 +1,17 @@
-import {Dimensions, StyleSheet, Text, TextInput, View} from 'react-native';
-import React from 'react';
+import {
+  Dimensions,
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
+} from 'react-native';
+import React, {useState} from 'react';
 import IconComponent from '../Reuseable/IconComponent';
 
 const CustomizedTextInput = () => {
+  const [isPasswordVisible, setIsPasswordVisible] = useState(false);
+
   return (
     <View style={styles.mainContainer}>
       <Text style={styles.componentTitle}>Customized TextInput</Text>
@@ -29,7 +38,15 @@ const CustomizedTextInput = () => {
             style={styles.inputStyle}
             placeholder="Enter Your Password........"
             placeholderTextColor="gray"
+            secureTextEntry={isPasswordVisible ? false : true}
           />
+          <TouchableOpacity
+            onPress={() => setIsPasswordVisible(!isPasswordVisible)}>
+            <IconComponent name={isPasswordVisible ? 'eye-slash' : 'eye'} />
+          </TouchableOpacity>
+          {/* <TouchableOpacity>
+            <IconComponent name="eye-slash" />
+          </TouchableOpacity> */}
         </View>
       </View>
     </View>
@@ -66,6 +83,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   inputStyle: {
+    flex: 1,
     color: 'black',
     fontSize: 17,
   },
