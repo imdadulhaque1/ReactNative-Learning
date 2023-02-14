@@ -98,6 +98,16 @@ const Home = ({navigation}) => {
             onPress={() => handleNavigate('AuthScreen')}
           />
         </View>
+        <View style={styles.btnStyle}>
+          <Button
+            btnTitle="Inbuilt Video Controller"
+            onPress={() => handleNavigate('InbuiltVideoController')}
+          />
+          <Button
+            btnTitle="Custom Video Controller"
+            onPress={() => handleNavigate('CustomVideoController')}
+          />
+        </View>
       </ScrollView>
     </View>
   );
