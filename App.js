@@ -27,6 +27,8 @@ import CustomizedTextInput from './src/screen/CustomizedTextInput';
 import AuthScreen from './src/screen/AuthScreen';
 import Login from './src/AuthScreen/Login';
 import Signup from './src/AuthScreen/Signup';
+import InbuiltVideoController from './src/screen/InbuiltVideoController';
+import CustomVideoController from './src/screen/CustomVideoController';
 
 const Stack = createNativeStackNavigator();
 
@@ -356,6 +358,38 @@ function App() {
           component={Signup}
           options={{
             title: 'Signup',
+            headerTitleAlign: 'center',
+            headerTitleStyle: {
+              color: '#fff',
+              fontFamily: 'Rajdhani-Bold',
+            },
+            headerStyle: {
+              backgroundColor: '#0C1A2C',
+            },
+            headerLeft: () => <BackButton />,
+          }}
+        />
+        <Stack.Screen
+          name="InbuiltVideoController"
+          component={InbuiltVideoController}
+          options={{
+            title: 'Inbuilt Video Controller',
+            headerTitleAlign: 'center',
+            headerTitleStyle: {
+              color: '#fff',
+              fontFamily: 'Rajdhani-Bold',
+            },
+            headerStyle: {
+              backgroundColor: '#0C1A2C',
+            },
+            headerLeft: () => <BackButton />,
+          }}
+        />
+        <Stack.Screen
+          name="CustomVideoController"
+          component={CustomVideoController}
+          options={{
+            title: 'Custom Video Controller',
             headerTitleAlign: 'center',
             headerTitleStyle: {
               color: '#fff',
