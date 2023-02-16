@@ -100,11 +100,11 @@ const Home = ({navigation}) => {
         </View>
         <View style={styles.btnStyle}>
           <Button
-            btnTitle="Inbuilt Video Controller"
+            btnTitle="InB. Video Controller"
             onPress={() => handleNavigate('InbuiltVideoController')}
           />
           <Button
-            btnTitle="Custom Video Controller"
+            btnTitle="C. Video Controller"
             onPress={() => handleNavigate('CustomVideoController')}
           />
         </View>
@@ -118,6 +118,7 @@ export default Home;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    paddingVertical: 5,
   },
   btnStyle: {
     flexDirection: 'row',
