@@ -25,7 +25,7 @@ const InbuiltVideoController = () => {
 
 export default InbuiltVideoController;
 
-const {height, width} = Dimensions.get('screen');
+// const {height, width} = Dimensions.get('screen');
 
 const styles = StyleSheet.create({
   container: {
@@ -49,6 +49,6 @@ const styles = StyleSheet.create({
     left: 0,
     right: 0,
     height: '40%',
-    width: width,
+    width: '100%',
   },
 });
