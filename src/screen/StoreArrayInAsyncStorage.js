@@ -60,7 +60,11 @@ const StoreArrayInAsyncStorage = () => {
             />
           </View>
           <View>
-            <Button btnTitle="Submit" onPress={() => dataHandler()} />
+            <Button
+              btnTextColor="#fff"
+              btnTitle="Submit"
+              onPress={() => dataHandler()}
+            />
           </View>
           <View style={styles.dataListContainer}>
             <Text style={styles.dataTitleStyle}>STORED DATA LIST</Text>

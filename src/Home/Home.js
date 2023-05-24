@@ -12,98 +12,121 @@ const Home = ({navigation}) => {
       <ScrollView>
         <View style={styles.btnStyle}>
           <Button
+            btnTextColor="#fff"
             btnTitle="Increment"
             onPress={() => handleNavigate('IncreDecrements')}
           />
         </View>
         <View style={styles.btnStyle}>
           <Button
+            btnTextColor="#fff"
             btnTitle="InputField"
             onPress={() => handleNavigate('InputField')}
           />
         </View>
         <View style={styles.btnStyle}>
           <Button
+            btnTextColor="#fff"
             btnTitle="Array To List"
             onPress={() => handleNavigate('ArrayToList')}
           />
         </View>
         <View style={styles.btnStyle}>
           <Button
-            btnTitle="Simple FlatLists"
+            btnTextColor="#fff"
+            btnTitle="FlatList"
             onPress={() => handleNavigate('FlatLists')}
           />
           <Button
-            btnTitle="Advanced FlatLists"
+            btnTextColor="#fff"
+            btnTitle="S. FlatList"
             onPress={() => handleNavigate('ExampleFlatList')}
+          />
+          <Button
+            btnTextColor="#fff"
+            btnTitle="A. FlatList"
+            onPress={() => handleNavigate('FlatListAdvanced')}
           />
         </View>
         <View style={styles.btnStyle}>
           <Button
+            btnTextColor="#fff"
             btnTitle="FetchAPI"
             onPress={() => handleNavigate('FetchApiData')}
           />
           <Button
+            btnTextColor="#fff"
             btnTitle="Advanced FetchAPI"
             onPress={() => handleNavigate('DataFetchAnother')}
           />
         </View>
         <View style={styles.btnStyle}>
           <Button
+            btnTextColor="#fff"
             btnTitle="Data Pass to Another"
             onPress={() => handleNavigate('One')}
           />
         </View>
         <View style={styles.btnStyle}>
           <Button
+            btnTextColor="#fff"
             btnTitle="WebView"
             onPress={() => handleNavigate('WebViewCom')}
           />
         </View>
         <View style={styles.btnStyle}>
           <Button
+            btnTextColor="#fff"
             btnTitle="HelloSuperStar Web"
             onPress={() => handleNavigate('HSS_Web')}
           />
           <Button
+            btnTextColor="#fff"
             btnTitle="Hello Super Stars"
             onPress={() => handleNavigate('HelloSuperStars')}
           />
         </View>
         <View style={styles.btnStyle}>
           <Button
+            btnTextColor="#fff"
             btnTitle="Async Storage"
             onPress={() => handleNavigate('AsyncStorageComp')}
           />
           <Button
+            btnTextColor="#fff"
             btnTitle="Array AsyncStorage"
             onPress={() => handleNavigate('StoreArrayInAsyncStorage')}
           />
         </View>
         <View style={styles.btnStyle}>
           <Button
+            btnTextColor="#fff"
             btnTitle="Responsive Portrait Landscape"
             onPress={() => handleNavigate('PortraitLandscape')}
           />
         </View>
         <View style={styles.btnStyle}>
           <Button
+            btnTextColor="#fff"
             btnTitle="Customized TextIput"
             onPress={() => handleNavigate('CustomizedTextInput')}
           />
         </View>
         <View style={styles.btnStyle}>
           <Button
+            btnTextColor="#fff"
             btnTitle="Auth Screen"
             onPress={() => handleNavigate('AuthScreen')}
           />
         </View>
         <View style={styles.btnStyle}>
           <Button
+            btnTextColor="#fff"
             btnTitle="InB. Video Controller"
             onPress={() => handleNavigate('InbuiltVideoController')}
           />
           <Button
+            btnTextColor="#fff"
             btnTitle="C. Video Controller"
             onPress={() => handleNavigate('CustomVideoController')}
           />

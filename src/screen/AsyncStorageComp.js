@@ -73,7 +73,11 @@ const AsyncStorageComp = () => {
             />
           </View>
           <View>
-            <Button btnTitle="Submit" onPress={() => handleSubmit()} />
+            <Button
+              btnTitle="Submit"
+              btnTextColor="#fff"
+              onPress={() => handleSubmit()}
+            />
           </View>
           <View style={styles.dataViewContainer}>
             <Text style={{color: 'black'}}>User Name: {storedData}</Text>

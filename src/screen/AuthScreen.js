@@ -9,10 +9,10 @@ const AuthScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
       <View style={styles.btnStyle}>
-        <Button btnTitle="Login" onPress={() => handleNavigate('Login')} />
+        <Button btnTextColor="#fff" btnTitle="Login" onPress={() => handleNavigate('Login')} />
       </View>
       <View style={styles.btnStyle}>
-        <Button btnTitle="Signup" onPress={() => handleNavigate('Signup')} />
+        <Button btnTextColor="#fff" btnTitle="Signup" onPress={() => handleNavigate('Signup')} />
       </View>
     </View>
   );

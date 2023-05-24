@@ -55,7 +55,11 @@ const One = ({navigation}) => {
         />
       </View>
       <View style={{flex: 1, marginHorizontal: 5}}>
-        <Button btnTitle="Submit" onPress={() => handleSubmit()} />
+        <Button
+          btnTitle="Submit"
+          btnTextColor="#fff"
+          onPress={() => handleSubmit()}
+        />
       </View>
     </View>
   );

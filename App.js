@@ -29,6 +29,7 @@ import Login from './src/AuthScreen/Login';
 import Signup from './src/AuthScreen/Signup';
 import InbuiltVideoController from './src/screen/InbuiltVideoController';
 import CustomVideoController from './src/screen/CustomVideoController';
+import FlatListAdvanced from './src/screen/FlatListAdvanced';
 
 const Stack = createNativeStackNavigator();
 
@@ -390,6 +391,22 @@ function App() {
           component={CustomVideoController}
           options={{
             title: 'Custom Video Controller',
+            headerTitleAlign: 'center',
+            headerTitleStyle: {
+              color: '#fff',
+              fontFamily: 'Rajdhani-Bold',
+            },
+            headerStyle: {
+              backgroundColor: '#0C1A2C',
+            },
+            headerLeft: () => <BackButton />,
+          }}
+        />
+        <Stack.Screen
+          name="FlatListAdvanced"
+          component={FlatListAdvanced}
+          options={{
+            title: 'Advanced FlatList with Own',
             headerTitleAlign: 'center',
             headerTitleStyle: {
               color: '#fff',
