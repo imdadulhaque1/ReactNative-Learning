@@ -30,6 +30,8 @@ import Signup from './src/AuthScreen/Signup';
 import InbuiltVideoController from './src/screen/InbuiltVideoController';
 import CustomVideoController from './src/screen/CustomVideoController';
 import FlatListAdvanced from './src/screen/FlatListAdvanced';
+import OwnPracticing from './src/screen/OwnPracticing/OwnPracticing';
+import AgainFlatList from './src/screen/OwnPracticing/ PracticingFlatList/AgainFlatList';
 
 const Stack = createNativeStackNavigator();
 
@@ -407,6 +409,38 @@ function App() {
           component={FlatListAdvanced}
           options={{
             title: 'Advanced FlatList with Own',
+            headerTitleAlign: 'center',
+            headerTitleStyle: {
+              color: '#fff',
+              fontFamily: 'Rajdhani-Bold',
+            },
+            headerStyle: {
+              backgroundColor: '#0C1A2C',
+            },
+            headerLeft: () => <BackButton />,
+          }}
+        />
+        <Stack.Screen
+          name="OwnPracticing"
+          component={OwnPracticing}
+          options={{
+            title: 'Advancely Own Learning',
+            headerTitleAlign: 'center',
+            headerTitleStyle: {
+              color: '#fff',
+              fontFamily: 'Rajdhani-Bold',
+            },
+            headerStyle: {
+              backgroundColor: '#0C1A2C',
+            },
+            headerLeft: () => <BackButton />,
+          }}
+        />
+        <Stack.Screen
+          name="AgainFlatList"
+          component={AgainFlatList}
+          options={{
+            title: 'Again FlatList',
             headerTitleAlign: 'center',
             headerTitleStyle: {
               color: '#fff',

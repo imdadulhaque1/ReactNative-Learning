@@ -131,6 +131,13 @@ const Home = ({navigation}) => {
             onPress={() => handleNavigate('CustomVideoController')}
           />
         </View>
+        <View style={styles.btnStyle}>
+          <Button
+            btnTextColor="#fff"
+            btnTitle="Advancedly Own Practicing"
+            onPress={() => handleNavigate('OwnPracticing')}
+          />
+        </View>
       </ScrollView>
     </View>
   );
