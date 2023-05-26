@@ -1,36 +1,35 @@
-import {Alert, FlatList, StyleSheet, TextInput, View, Text} from 'react-native';
+import {
+  Alert,
+  FlatList,
+  StyleSheet,
+  TextInput,
+  View,
+  Text,
+  StatusBar,
+} from 'react-native';
 import React, {useState} from 'react';
 import Button from '../../../Reuseable/Button';
+import InputData from './InputData';
+import ViewData from './ViewData';
 
 const AgainFlatList = ({navigation}) => {
-  const [takingData, setTakingData] = useState('');
   const [storeTakingData, setStoreTakingData] = useState([]);
-  const HandleDataSubmit = () => {
+  const HandleDataSubmit = takingData => {
     // Alert.alert(takingData);
     setStoreTakingData(newData => [
       ...newData,
       {takingData: takingData, id: Math.random().toString()},
     ]);
   };
-  console.log(storeTakingData);
+  const DeleteHandlerFunc = id => {
+    setStoreTakingData(currentTakingData => {
+      return currentTakingData.filter(currentItem => currentItem.id !== id);
+    });
+  };
   return (
     <View style={styles.container}>
-      <View style={styles.inputSectionStyle}>
-        <View style={styles.inputContainerStyle}>
-          <TextInput
-            style={styles.inputStyle}
-            placeholder="Typing Something......."
-            placeholderTextColor="gray"
-            value={takingData}
-            onChangeText={value => setTakingData(value)}
-          />
-        </View>
-        <Button
-          btnTitle="Submit"
-          btnTextColor="#fff"
-          onPress={HandleDataSubmit}
-        />
-      </View>
+      <StatusBar hidden={true} />
+      <InputData AddItems={HandleDataSubmit} />
 
       <View
         style={{borderColor: '#120221', borderWidth: 1, marginVertical: 10}}
@@ -39,9 +38,11 @@ const AgainFlatList = ({navigation}) => {
         data={storeTakingData}
         renderItem={storedData => {
           return (
-            <View>
-              <Text style={{color: 'black'}}>{storedData.item.}</Text>
-            </View>
+            <ViewData
+              storedDataView={storedData.item.takingData}
+              id={storedData.item.id}
+              onDeleteStoredItem={DeleteHandlerFunc}
+            />
           );
         }}
         keyExtractor={(item, index) => {
@@ -58,22 +59,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingVertical: 5,
-  },
-  inputSectionStyle: {
-    flexDirection: 'row',
+    marginHorizontal: 5,
     justifyContent: 'center',
-  },
-  inputContainerStyle: {
-    borderRadius: 10,
-    borderColor: '#3209ce',
-    borderWidth: 1,
-    width: '70%',
-    marginLeft: 8,
-    justifyContent: 'center',
-  },
-  inputStyle: {
-    color: 'black',
-    fontFamily: 'Rajdhani-Regular',
-    fontSize: 18,
   },
 });
