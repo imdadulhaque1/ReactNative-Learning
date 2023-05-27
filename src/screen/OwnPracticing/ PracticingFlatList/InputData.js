@@ -1,4 +1,4 @@
-import {StyleSheet, View, TextInput, Modal} from 'react-native';
+import {StyleSheet, View, TextInput, Modal, Image} from 'react-native';
 import React, {useState} from 'react';
 import Button from '../../../Reuseable/Button';
 
@@ -11,6 +11,12 @@ const InputData = props => {
   return (
     <Modal visible={props.visible} animationType="slide">
       <View style={styles.inputSectionStyle}>
+        <View style={styles.imgContainerStyle}>
+          <Image
+            source={require('../../../Assets/Images/imdadulhaque.jpg')}
+            style={styles.imgStyle}
+          />
+        </View>
         <View style={styles.inputContainerStyle}>
           <TextInput
             style={styles.inputStyle}
@@ -62,5 +68,18 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     marginHorizontal: 5,
     marginVertical: 10,
+  },
+  imgContainerStyle: {
+    marginBottom: 20,
+    height: 180,
+    width: 180,
+    borderRadius: 100,
+    borderColor: '#1f0c4a',
+    borderWidth: 3,
+  },
+  imgStyle: {
+    height: 174,
+    width: 174,
+    borderRadius: 100,
   },
 });
