@@ -3,14 +3,16 @@ import React from 'react';
 
 const ViewData = props => {
   return (
-    <View style={styles.showedDataStyles}>
-      <Pressable
-        android_ripple={{color: '#c5c5c5'}}
-        //! below is for iOS customed
-        style={({pressed}) => pressed && styles.pressedItem}
-        onPress={props.onDeleteStoredItem.bind(this, props.id)}>
-        <Text style={styles.inputStyle}>{props.storedDataView}</Text>
-      </Pressable>
+    <View style={{flex: 1}}>
+      <View style={styles.showedDataStyles}>
+        <Pressable
+          android_ripple={{color: '#c5c5c5'}}
+          //! below is for iOS customed
+          style={({pressed}) => pressed && styles.pressedItem}
+          onPress={props.onDeleteStoredItem.bind(this, props.id)}>
+          <Text style={styles.inputStyle}>{props.storedDataView}</Text>
+        </Pressable>
+      </View>
     </View>
   );
 };
@@ -25,7 +27,7 @@ const styles = StyleSheet.create({
     paddingVertical: 20,
   },
   showedDataStyles: {
-    width: '98%',
+    width: '97%',
     backgroundColor: '#1a0447',
     borderRadius: 5,
     marginVertical: 5,
